@@ -38,9 +38,9 @@ Thực hiện : **Phạm Đạt**
 	lt | <  : Less Than
 	ge | >= : Greater than or Equal to
 	&&      : And(và)
-	||      : Or (hoặc)
-	!		: Not(phủ định) 
-	 ```
+	||      : Or (hoặc) 
+	!		: Not(phủ định)  
+	 ```  
 - Protocol: 
 	- Gõ thẳng: tcp, udp, http....
 	- Hay mạnh mẽ hơn khi tao biết được port của gói tin đó thì có thể kết hợp cả port và protocol:
@@ -62,10 +62,10 @@ vd: `tcp.stream eq 3`
 
 
 
-	
+
 	- Prepare a Filter: Chọn nhưng chua chạy Filter hiển thị lệnh filter cho ta và ta có thể chọn thêm những tùy chọn nữa để lệnh của ta được mạnh mẽ hơn.
 	<img src="https://i.imgur.com/EQ7KQwk.png">
-
+- Nếu ta muốn filter phần nào thì ta nhấp chuột vào phần đó và filter, công cụ này cũng khá mạnh mẽ có thể nhấp vào phần gói tin để có các tùy chọn mạnh mẽ để filter.
 <a name="1"></a>
 ## 2.1 Phân tích gói tin
 
