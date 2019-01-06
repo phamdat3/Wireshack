@@ -39,22 +39,32 @@ Thực hiện : **Phạm Đạt**
 	ge | >= : Greater than or Equal to
 	&&      : And(và)
 	||      : Or (hoặc)
-	!		: Not(phủ định)
+	!		: Not(phủ định) 
 	 ```
 - Protocol: 
 	- Gõ thẳng: tcp, udp, http....
-	- Hay mạnh mẽ hơn khi tao biết được port cảu gói tin đó thì có thể kết hợp cả port và protocol:
+	- Hay mạnh mẽ hơn khi tao biết được port của gói tin đó thì có thể kết hợp cả port và protocol:
 	`tcp.port == 25` hoặc `tcp.port eq 25`
 - Địa chỉ ip:
 	- `ip.src == 216.58.220.196` : Lọc các gói tin có địa chỉ sourece là 216.58.220.196
 	- `ip.dst == 192.168.2.119`  : Lọc các gói tin có địa chỉ distination là 192.168.2.119
 	- `ip.addr == 192.168.2.119` : Lọc các ogis tin có địa chỉ là 192.168.2.119 (bao gồm cả souce và destination)
 - Chiều dài gói tin:
-	Khi ta muốn lọc những gói tin có 1 chiều dài nhất định: `frame.len == 54`
-
+	Khi ta muốn lọc những gói tin có 1 chiều dài nhất định: `frame.len == 54` 
 - Follow Stream: Để xem rõ một phiên trao đổi các gói tin của server và client
 vd: `tcp.stream eq 3`
-<img src="https://i.imgur.com/ilmktBX.png">
+<img src="https://i.imgur.com/ilmktBX.png"> 
+
+**Sử dụng đồ họa**
+- Có hai tùy chọn là **Apply as Filter** và **Prepare a Filter**
+	- Apply as Filter: Chọn và chạy filter luôn và hiện thị kết quả luôn:
+	<img src="https://i.imgur.com/duRYrqc.png">
+
+
+
+	
+	- Prepare a Filter: Chọn nhưng chua chạy Filter hiển thị lệnh filter cho ta và ta có thể chọn thêm những tùy chọn nữa để lệnh của ta được mạnh mẽ hơn.
+	<img src="https://i.imgur.com/EQ7KQwk.png">
 
 <a name="1"></a>
 ## 2.1 Phân tích gói tin
